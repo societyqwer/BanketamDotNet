@@ -1,0 +1,140 @@
+/* --- 1. Сброс и база --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    background: #e8e8e8;
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- 2. Навигация --- */
+.demo-nav {
+    background: #2c2c2c;
+    padding: 12px 24px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    border: 1px solid #444;
+    max-width: 900px;
+    width: 90%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.demo-nav a {
+    border-radius: 20px;
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 16px;
+    transition: background 0.3s;
+    font-size: 0.95rem;
+    border: 1px solid transparent;
+}
+
+.demo-nav a:hover, .demo-nav a.active {
+    background: #444;
+}
+
+/* --- 3. Карточки контента --- */
+.page-card {
+    background: #fff;
+    width: 95%;
+    max-width: 800px;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1, h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* --- 4. Формы и поля --- */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+input, select, textarea {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #1a1a1a;
+}
+
+/* --- 5. Кнопки --- */
+.btn {
+    background: #1a1a1a;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.btn:hover { background: #333; }
+.btn:active { transform: scale(0.98); }
+
+/* --- 6. Таблицы и статусы --- */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-table th, .admin-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.admin-table th { background: #f4f4f4; }
+
+.status-новая { color: #007bff; font-weight: bold; }
+.status-одобрено { color: #28a745; font-weight: bold; }
+.status-отклонено { color: #dc3545; font-weight: bold; }
+
+/* --- 7. Прочее --- */
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 15px auto;
+    display: block;
+    border-radius: 8px;
+}
